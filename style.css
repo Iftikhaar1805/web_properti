@@ -1,0 +1,71 @@
+/* Reset & Font */
+body { margin: 0; font-family: 'Poppins', sans-serif; background-color: #f8f9fa; color: #333; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: #1e3d2f; } /* Warna Hijau Tua Mewah */
+
+/* NAVBAR */
+nav { display: flex; justify-content: space-between; align-items: center; padding: 20px 5%; background: white; box-shadow: 0 4px 15px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+.logo { font-size: 22px; font-weight: 700; letter-spacing: 1px; color: #1e3d2f; }
+.nav-links { list-style: none; display: flex; gap: 30px; }
+.nav-links a { text-decoration: none; color: #555; font-weight: 500; font-size: 14px; transition: 0.3s; }
+.nav-links a:hover { color: #1e3d2f; }
+.btn-cta { background: #1e3d2f; color: white !important; padding: 10px 25px; border-radius: 50px; font-weight: 600; }
+.btn-cta:hover { background: #142920; }
+
+/* HERO SECTION */
+header {
+    height: 90vh;
+    background: url('images/header-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex; align-items: center; justify-content: center; text-align: center; color: white;
+}
+.overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.6)); }
+.hero-content { position: relative; z-index: 1; max-width: 800px; padding: 20px; }
+.hero-content h1 { font-size: 3.5rem; margin-bottom: 15px; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
+.hero-content p { font-size: 1.2rem; margin-bottom: 30px; font-weight: 300; }
+.btn-primary { display: inline-block; padding: 15px 40px; background: #c5a065; color: white; text-decoration: none; font-weight: 600; border-radius: 5px; transition: 0.3s; }
+.btn-primary:hover { background: #b08d55; transform: translateY(-3px); }
+
+/* ABOUT SECTION */
+#about { padding: 80px 5%; background: white; text-align: center; }
+.about-text { max-width: 800px; margin: 0 auto; }
+.about-text p { line-height: 1.8; color: #666; margin-bottom: 30px; }
+.features { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+.features span { font-weight: 600; color: #1e3d2f; font-size: 1.1rem; }
+.features i { color: #c5a065; margin-right: 10px; }
+
+/* CLUSTER SECTION */
+#clusters { padding: 80px 5%; background: #f8f9fa; }
+.section-title { text-align: center; margin-bottom: 60px; }
+.section-title p { color: #777; max-width: 600px; margin: 10px auto; }
+
+.grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+.card { background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: transform 0.3s ease; }
+.card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(0,0,0,0.1); }
+.card-img { height: 220px; background-size: cover; background-position: center; }
+.card-body { padding: 30px; }
+.card-body h3 { margin-bottom: 10px; font-size: 1.5rem; }
+.desc { font-size: 13px; color: #888; margin-bottom: 20px; line-height: 1.5; }
+
+/* Specs Grid (Detail Spek) */
+.specs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 25px; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 15px 0; }
+.spec-item { font-size: 13px; color: #555; display: flex; align-items: center; }
+.spec-item i { width: 25px; color: #c5a065; }
+
+.price-tag { margin-bottom: 20px; }
+.price-tag span { font-size: 12px; color: #999; text-transform: uppercase; letter-spacing: 1px; }
+.price-tag h4 { font-size: 1.4rem; color: #1e3d2f; margin: 5px 0 0 0; }
+
+.btn-wa { display: block; text-align: center; padding: 12px; background: #25D366; color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: 0.3s; }
+.btn-wa:hover { background: #20bd5a; box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3); }
+
+/* FACILITIES SECTION */
+#facilities { padding: 80px 5%; background: white; }
+.facilities-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; }
+.fac-card { text-align: center; padding: 30px; border: 1px solid #eee; border-radius: 10px; transition: 0.3s; }
+.fac-card:hover { border-color: #c5a065; transform: translateY(-5px); }
+.fac-card i { font-size: 40px; color: #c5a065; margin-bottom: 20px; }
+.fac-card h4 { margin-bottom: 10px; color: #333; }
+.fac-card p { font-size: 13px; color: #777; }
+
+/* FOOTER */
+footer { background: #1e3d2f; color: #aaa; text-align: center; padding: 30px; font-size: 13px; }
